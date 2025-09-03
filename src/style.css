@@ -6,13 +6,15 @@
 .character {
   background-color: var(--dusty-pink-color);
   text-align: center;
-  padding: 160px 0px;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  border: 3px white solid;
 }
 h1 {
   color: black;
   font-family: var(--primary-font-family);
   font-weight: bold;
-  font-size: 90px;
+  font-size: 86px;
 }
 .character h2 {
   font-family: var(--secondary-font-family);
@@ -37,11 +39,103 @@ h1 {
 }
 .btn-branding {
   background-color: #3f3f3f;
-  color: var(--dusty-pink-color);
+  color: white;
   border-radius: 20px;
   line-height: 21px;
   padding: 8px 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 .btn-branding:hover {
+  border: 2px solid white;
+  color: var(--dusty-pink-color);
+}
+h2 {
+  font-size: 50px;
+  font-family: var(--primary-font-family);
+}
+p {
+  font-family: var(--secondary-font-family);
+  font-size: 20px;
+  font-weight: normal;
+}
+.btn-branding-secondary {
+  background-color: var(--dusty-pink-color);
+  color: black;
+  border-radius: 20px;
+  line-height: 21px;
+  padding: 8px 16px;
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
+  font-size: 16px;
+  border: 2px solid;
+  margin-bottom: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.btn-branding-secondary:hover {
+  background-color: #3f3f3f;
   color: white;
+  border: 2px solid var(--dusty-pink-color);
+}
+body {
+  background-color: #3f3f3f;
+}
+.container {
+  background-color: white;
+  border: 20px solid var(--dusty-pink-color);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 30px 30px;
+}
+.fa-brands {
+  color: white;
+}
+.project-description {
+  padding: 30px;
+  max-width: 500px;
+}
+@media (max-width: 900px) {
+  .project-description {
+    text-align: center;
+    padding: 0;
+  }
+  .container {
+    background-color: #3f3f3f;
+    border-radius: none;
+  }
+  .text-column {
+    background-color: white;
+  }
+  .btn-branding-secondary:hover {
+    color: var(--dusty-pink-color);
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .character h2,
+  h3 {
+    font-size: 12px;
+  }
+  .character p {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+img.img-fluid {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+.row {
+  border-bottom: 2px solid var(--dusty-pink-color);
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.text-column {
+  border-radius: 10px;
 }
