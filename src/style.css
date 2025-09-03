@@ -8,7 +8,7 @@
   text-align: center;
   padding-top: 160px;
   padding-bottom: 40px;
-  border: 3px white solid;
+  border-bottom: 3px white solid;
 }
 h1 {
   color: black;
@@ -50,7 +50,7 @@ h1 {
   color: var(--dusty-pink-color);
 }
 h2 {
-  font-size: 50px;
+  font-size: 46px;
   font-family: var(--primary-font-family);
 }
 p {
@@ -80,11 +80,12 @@ body {
   background-color: #3f3f3f;
 }
 .container {
-  background-color: white;
+  background-color: #3f3f3f;
   border: 20px solid var(--dusty-pink-color);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   padding: 30px 30px;
+  color: white;
 }
 .fa-brands {
   color: white;
@@ -97,26 +98,28 @@ body {
   .project-description {
     text-align: center;
     padding: 0;
+    background-color: #3f3f3f;
+    color: white;
   }
   .container {
     background-color: #3f3f3f;
     border-radius: none;
   }
-  .text-column {
-    background-color: white;
-  }
+
   .btn-branding-secondary:hover {
     color: var(--dusty-pink-color);
   }
-  h1 {
+  h1,
+  h2 {
     font-size: 36px;
   }
+
   .character h2,
   h3 {
     font-size: 12px;
   }
   .character p {
-    font-size: 16px;
+    font-size: 20px;
   }
   p {
     font-size: 14px;
@@ -138,4 +141,79 @@ img.img-fluid {
 }
 .text-column {
   border-radius: 10px;
+}
+.my-intro-section {
+  border-radius: 15px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  background-color: #3f3f3f;
+  border: none;
+}
+
+.body-about {
+  background-color: var(--dusty-pink-color);
+}
+.into-row {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.into-row p {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 18px;
+  font-family: var(--secondary-font-family);
+  color: White;
+
+  padding-left: 40px;
+}
+@media (max-width: 900px) {
+  .into-row p {
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .into-row {
+    flex-direction: column;
+  }
+
+  .into-row .col-3,
+  .into-row .col-9 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.character-about {
+  background-color: var(--dusty-pink-color);
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 40px;
+}
+
+.character-about a {
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
+  font-size: 20px;
+}
+.character-about p {
+  font-size: 20px;
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
+}
+
+.character-about h1 {
+  font-family: var(--primary-font-family);
+  font-weight: bold;
+  font-size: 80px;
+}
+.character-about h2 {
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
+  font-size: 30px;
+}
+.character-about h3 {
+  font-family: var(--secondary-font-family);
+  font-weight: normal;
+  font-size: 20px;
 }
