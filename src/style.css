@@ -31,7 +31,6 @@ h1 {
   font-weight: bold;
   font-size: 36px;
 }
-
 .character a {
   font-family: var(--secondary-font-family);
   font-weight: normal;
@@ -105,7 +104,6 @@ body {
     background-color: #3f3f3f;
     border-radius: none;
   }
-
   .btn-branding-secondary:hover {
     color: var(--dusty-pink-color);
   }
@@ -113,7 +111,6 @@ body {
   h2 {
     font-size: 36px;
   }
-
   .character h2,
   h3 {
     font-size: 12px;
@@ -129,7 +126,8 @@ img.img-fluid {
   display: block;
   margin: 0 auto;
   max-width: 100%;
-  max-height: 500px;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
@@ -143,12 +141,13 @@ img.img-fluid {
   border-radius: 10px;
 }
 .my-intro-section {
-  border-radius: 15px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 40px 60px;
   background-color: #3f3f3f;
-  border: none;
-}
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
 
+  border-radius: 0;
+}
 .body-about {
   background-color: var(--dusty-pink-color);
 }
@@ -157,30 +156,40 @@ img.img-fluid {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.into-row p {
-  text-align: justify;
-  line-height: 1.8;
-  font-size: 18px;
-  font-family: var(--secondary-font-family);
-  color: White;
 
-  padding-left: 40px;
+.into-row p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: var(--secondary-font-family);
+  color: white;
+  text-align: justify;
 }
+
 @media (max-width: 900px) {
-  .into-row p {
-    font-size: 16px;
-    padding: 15px;
+  .into-row {
+    flex-direction: column;
     text-align: center;
   }
 
-  .into-row {
-    flex-direction: column;
-  }
-
-  .into-row .col-3,
-  .into-row .col-9 {
+  .into-row .col-lg-3,
+  .into-row .col-lg-9 {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .into-row p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: var(--secondary-font-family);
+    color: white;
+    text-align: center;
+    padding-right: 0px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  img.img-fluid {
+    max-height: 300px;
   }
 }
 
@@ -190,7 +199,6 @@ img.img-fluid {
   padding-top: 160px;
   padding-bottom: 40px;
 }
-
 .character-about a {
   font-family: var(--secondary-font-family);
   font-weight: normal;
@@ -201,11 +209,10 @@ img.img-fluid {
   font-family: var(--secondary-font-family);
   font-weight: normal;
 }
-
 .character-about h1 {
   font-family: var(--primary-font-family);
   font-weight: bold;
-  font-size: 80px;
+  font-size: 76px;
 }
 .character-about h2 {
   font-family: var(--secondary-font-family);
