@@ -341,3 +341,14 @@ img.img-fluid-a {
   align-items: center;
   text-align: center;
 }
+.container-navigation {
+  border: none;
+}
+nav li {
+  display: inline;
+  list-style: none;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
