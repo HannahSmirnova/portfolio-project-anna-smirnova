@@ -396,3 +396,51 @@ nav li.active a {
   color: black;
   font-weight: bolder;
 }
+.dark .footer-container .social-link {
+  color: #3f3f3f;
+  text-decoration: none;
+  font-family: var(--secondary-font-family);
+  transition: color 0.3s ease;
+}
+
+.footer-container .social-link:hover {
+  color: black;
+}
+.work-email {
+  text-decoration: none;
+  color: black;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+.work-email:hover {
+  border: 1px solid white;
+  color: black;
+  border-radius: 10px;
+}
+.email-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+footer {
+  text-align: center;
+  font-family: var(--secondary-font-family);
+  font-size: 12px;
+  margin-top: 20px;
+  padding-top: 280px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  font-family: var(--secondary-font-family);
+  font-size: 12px;
+  color: var(--dusty-pink-color);
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: white;
+}
