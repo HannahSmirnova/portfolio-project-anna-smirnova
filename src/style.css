@@ -460,6 +460,7 @@ footer a {
 footer a:hover {
   color: white;
 }
+
 @media (max-width: 600px) {
   nav a {
     font-size: 16px;
@@ -470,4 +471,8 @@ footer a:hover {
     gap: 20px;
     padding: 10px;
   }
+}
+footer .darker {
+  color: #3f3f3f;
+  font-family: var(--secondary-font-family);
 }

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Anna. Anna is a front-end development student based in Saskatchewan, Canada."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,7 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <title>About Anna Smirnova</title>
   </head>
   <body class="body-about">
     <div class="container-navigation">
@@ -27,13 +31,17 @@
         <nav>
           <ul>
             <li>
-              <a href="/index.html">Home</a>
+              <a href="/index.html" title="Homepage">Home</a>
             </li>
             <li class="active">
-              <a class="pe-2 ps-2" href="/about.html">About</a>
+              <a class="pe-2 ps-2" href="/about.html" title="About Anna"
+                >About</a
+              >
             </li>
-            <li><a href="/work.html">Work</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/work.html" title="Anna's Projects">Work</a></li>
+            <li>
+              <a href="/contact.html" title="Anna's contact info">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -43,7 +51,12 @@
       <h2>Russian-Canadian Web-Development student</h2>
       <h3 class="mb-5">📍 Based in Saskatchewan, Canada</h3>
       <div>
-        <a href="/work.html" class="btn btn-branding">Check out my projects</a>
+        <a
+          href="/work.html"
+          class="btn btn-branding"
+          title="See Anna's projects"
+          >Check out my projects</a
+        >
       </div>
     </div>
 
@@ -112,6 +125,22 @@
           </div>
         </div>
       </div>
+      Coded by Anna Smirnova
+      <br />
+      <a
+        class="darker"
+        href="https://github.com/HannahSmirnova/portfolio-project-anna-smirnova.git"
+        target="_blank"
+        title="Github Profile"
+        >open-sourced on Github,</a
+      >
+      <a
+        class="darker"
+        href="https://portfolio-project-anna-smirnova.netlify.app/"
+        target="_blank"
+        title="Netlify hosting"
+        >hosted on Netlify</a
+      >
     </footer>
   </body>
 </html>
