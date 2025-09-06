@@ -84,7 +84,12 @@
         </div>
       </div>
     </div>
-
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".container-navigation");
+        nav.classList.toggle("scrolled", window.scrollY > 10);
+      });
+    </script>
     <footer class="dark">
       <div class="email-wrapper">
         <a class="work-email pe-2 ps-2" href="mailto:smirnova.hannah@gmail.com">

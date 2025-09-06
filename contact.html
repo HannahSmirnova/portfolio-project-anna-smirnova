@@ -84,7 +84,12 @@
         </div>
       </div>
     </div>
-
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".container-navigation");
+        nav.classList.toggle("scrolled", window.scrollY > 10);
+      });
+    </script>
     <footer>
       Coded by Anna Smirnova
       <br />

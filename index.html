@@ -50,7 +50,7 @@
         >
       </div>
     </div>
-    <p class="text-center text-white mt-5 mb-5">
+    <p class="text-center text-white pe-2 ps-2 mt-5 mb-5">
       Featured are final projects of Basics, Plus and Plus AI Modules
     </p>
     <div class="container">
@@ -135,6 +135,13 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".container-navigation");
+        nav.classList.toggle("scrolled", window.scrollY > 10);
+      });
+    </script>
+
     <footer>
       <div class="footer-container mt-5 pt-5 pb-5">
         <div class="social-row">
