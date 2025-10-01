@@ -256,6 +256,7 @@ img.img-fluid {
   border-color: var(--dusty-pink-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   transition: all 0.5s ease-in-out;
+  aspect-ratio: 4 / 3;
 }
 .img-work:hover {
   transform: scale(1.2);
@@ -412,6 +413,19 @@ footer a:hover {
   color: black;
   border-radius: 10px;
 }
+.resume {
+  text-decoration: none;
+  color: var(--dusty-pink-color);
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  text-align: justify;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.resume:hover {
+  color: rgb(255, 255, 255);
+}
+
 .email-wrapper {
   display: flex;
   justify-content: center;
@@ -518,5 +532,20 @@ footer .darker {
   }
   footer {
     margin-top: 0px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 601px) {
+  .img-work,
+  img.img-fluid {
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 20px;
+  }
+
+  .grid-work {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
